@@ -1,6 +1,6 @@
 import React from 'react';
-import '@testing-library/react/cleanup-after-each';
 import ReactDOM from 'react-dom';
+import { render, test } from '@testing-library/react';
 import { App, sum } from './App';
 
 it('renders without crashing', () => {
@@ -9,7 +9,7 @@ it('renders without crashing', () => {
   ReactDOM.unmountComponentAtNode(div);
 });
 
-const test = require('./App');
+// const test = require('./App');
 
 describe('sum function', () => {
   it('sums two integers', () => {
