@@ -77,3 +77,16 @@
     border: none;
   }
 
+.left{
+  display: flex;
+  flex-direction: column;
+  float: left;
+  margin-left: 500px;
+}
+
+.right{
+  display: flex;
+  flex-direction: column;
+float: right;
+margin-right: 500px;
+}

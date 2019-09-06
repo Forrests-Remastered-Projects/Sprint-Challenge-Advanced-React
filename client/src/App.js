@@ -30,13 +30,20 @@ componentDidUpdate() {
   }
 }
 
+
+
 function WorldCup(props) {
   return (
   <div>
     <Button />
     <h2>Welcome to the Women's World Cup!</h2>
     <h3>Our Players are listed below!</h3>
-    {props.players.map(players => (<div key={players.id}>{players.name}</div>))}
+    <div className="left">
+    {props.players.map(players => (<div key={players.id}>{players.name}                                               --------------------------------------------------------------------------------></div>))} 
+    </div>
+    <div className="right">
+    {props.players.map(players => (<div key={players.id}>{players.country}</div>))}
+</div>
       </div>
   );
 }
