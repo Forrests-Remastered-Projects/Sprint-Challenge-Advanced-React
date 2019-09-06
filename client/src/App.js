@@ -34,11 +34,14 @@ export const sum = (a, b) => a + b;
 
 
 function WorldCup(props) {
-  return (
+  return (  
   <div>
     <Button />
     <h2>Welcome to the Women's World Cup!</h2>
-    <h3>Our Players are listed below!</h3>
+    <h3>    &darr;
+Our Players are listed below!     &darr;
+</h3>
+    
     <div className="left">
     {props.players.map(players => (<div key={players.id}>{players.name}                                               --------------------------------------------------------------------------------></div>))} 
     </div>
